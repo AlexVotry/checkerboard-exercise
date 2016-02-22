@@ -50,5 +50,10 @@ function addSquare() {
      flashSquare();
  }, 2000 ); //set an interval timer up to repeat the function
 
+var lastDiv = document.getElementsByClassName('div')[62];
+var music = document.createElement('audio');
+music.src = 'thiftshop.mp3';
+lastDiv.appendChild(music);
+music.play();
 
 }());
